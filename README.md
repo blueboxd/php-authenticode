@@ -2,7 +2,7 @@
 
 ## What is this?
 
-~~prototype of~~ pure-php implementation of authenticode verifier.
+pure-php implementation of authenticode verifier.
 
 ## implemented validation
 - authenticode hash (PE32/PE32+)
@@ -29,8 +29,7 @@ php tools/verifyAC.php /path/to/PE
 ```
 
 ### certificate store
-certificates (pem format) in `trusted/codesigning` are trusted as root CA  
-(TBW)
+certificates (pem format) in `trusted/codesigning` are trusted as root CA
 
 ## TODOs
 
@@ -43,4 +42,4 @@ certificates (pem format) in `trusted/codesigning` are trusted as root CA
  - [ ] OCSP client
  - [ ] validate certificate with OCSP result
 - [ ] basicConstraints (pathlen)
-- [ ] restrict CA certificates for usage
+- [ ] restrict usage of CA certificates
